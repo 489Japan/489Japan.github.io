@@ -657,8 +657,7 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/map-image.jpg');
+    background-color: #f1f1f1;
     background-position: center;
     background-repeat: no-repeat;
 }
