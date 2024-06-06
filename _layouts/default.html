@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .checkbox-container {
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block; /* Optional: Keeps the container size minimal */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    }
+    .success-message {
+      display: none;
+    }    
+    .failure-message {
+      display: none;
+    }    
+  </style>
+  {% include head.html %}
+
+
+    <body id="page-top" class="index">
+
+    {% include header.html %}
+    {% include about.html %}
+    {% include contact.html %}
+    {% comment %}
+    {% include portfolio_grid.html %}
+    {% include pricing.html %}
+    {% endcomment %}
+    {% include terms.html %}
+    {% include team.html %}
+    {% include footer.html %}
+    {% include modals.html %}
+    {% include js.html %}
+
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-heading">Charge per phone call</h3>
+                    <h1 class="section-heading">¥1,000</h1>
+
+                    <h3 class="section-subheading text-muted">Please note that this is a cost for our service, not for the reservation itself; we cannot guarantee that you will get a seat. In such cases, we will inform you of the responses (such as available hours) received from the shop.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                <h2 class="text-center">ORDER NOW</h2>
+                    <form id="googleform" method="post" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe3A5AS3H12hKVEaecI8CK6xS0mACOt_FkqeA1f5NPXfgP0nQ/formResponse">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="control-group form-group">
+                                    <p class="text-muted">The place you want to make a reservation</p>
+                                    <span class="text-muted">Shop Phone Number</span>
+                                    <input type="tel" name="entry.1223380498" class="form-control" placeholder="Shop Phone Number *" id="shop_phone" required data-validation-required-message="Shop Phone Number">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <p class="text-muted">Information required to make a reservation</p>
+                                <div class="control-group form-group">
+                                    <span class="text-muted">Your Name</span>
+                                    <input type="text" name="entry.232093579" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="This is required for your reservation.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group form-group">
+                                    <!-- <input type="number" min="1" max="10" name="entry.191640449" class="form-control" placeholder="Number of Customers *" id="num_customers" required data-validation-required-message="This is required for your reservation."> -->
+                                    <span class="text-muted">Number of Customers</span>
+                                    <select name="entry.191640449" class="form-control" placeholder="Number of Customers *" id="num_customers" required data-validation-required-message="This is required for your reservation.">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group form-group">
+                                    <span class="text-muted">Preferred Time</span>
+                                    <input type="time" name="entry.8674702" class="form-control" placeholder="Preferred Time *" id="preferred_time" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="control-group form-group">
+                                    <span class="text-muted">Details about your reservation (such as the course option)</span>
+                                    <textarea class="form-control" name="entry.1138808801" placeholder="Please specify all the details. If any information is missing, additional costs may apply for another phone call." id="message"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <p class="text-muted">Information required to contact you from us</p>
+                                <div class="control-group form-group">
+                                    <span class="text-muted">Your Email</span>
+                                    <input type="email" name="entry.950201939" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="This is required to contact you from us.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="checkbox-container">
+                                <label>
+                                    <input type="checkbox" name="entry.1933024442" value="Agree to our Terms of Service" required>
+                                    <span class="text-muted">Agree to our <a class="page-scroll" href="#terms">Terms of Service</a></span>
+                                </label>
+                                </div>
+                                <p><br></p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <div class="alert alert-info success-message" role="alert">
+                                  <h4 class="alert-heading">THANK YOU!</h4>
+                                  <p>We will send you the payment link once your inquiry is confirmed.</p>
+                                </div>
+                                <input type="submit" class="btn btn-xl" value="Send">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>

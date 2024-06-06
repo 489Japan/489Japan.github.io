@@ -1,0 +1,47 @@
+ <!-- jQuery Version 1.11.0 -->
+    <!-- <script src="{{ "/js/jquery-3.6.0.min" | prepend: site.baseurl }}"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <!-- <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
+    <!-- <script src="{{ "/js/contact_me.js" | prepend: site.baseurl }}"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
+
+<script>
+$(document).ready(function () {
+
+      $('#googleform').submit(function (event) {
+        var formData = $('#googleform').serialize();
+        $.ajax({
+          url: "https://docs.google.com/forms/u/1/d/e/1FAIpQLSe3A5AS3H12hKVEaecI8CK6xS0mACOt_FkqeA1f5NPXfgP0nQ/formResponse",
+          data: formData,
+          type: "POST",
+          dataType: "xml",
+          statusCode: {
+            0: function () {
+              $(".success-message").slideDown();
+              $(".btn-xl").fadeOut();
+              //window.location.href = "thanks.html";
+            },
+            200: function () {
+              $(".failure-message").slideDown();
+            }
+          }
+        });
+        event.preventDefault();
+      });
+
+    });
+</script>    
